@@ -1,44 +1,15 @@
-import { useState } from "react";
 import {
   Phone,
   Mail,
   MapPin,
   Clock,
-  Send,
   Facebook,
   Instagram,
   MessageCircle,
   Sparkles,
-  ArrowRight,
-  CheckCircle2,
 } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    // Simulate submission
-    setTimeout(() => {
-      alert("Thank you for your message! We will get back to you soon.");
-      setIsSubmitting(false);
-      setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-    }, 1000);
-  };
-
   const contactCards = [
     {
       icon: Phone,
@@ -131,141 +102,38 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Form & Location */}
+      {/* Location & Map Section */}
       <section className="bg-brand-cream py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-brand-gold/10">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-12 h-12 bg-gradient-to-br from-brand-gold to-yellow-500 rounded-xl flex items-center justify-center shadow-lg">
-                  <Send size={24} className="text-white" />
-                </div>
-                <div>
-                  <h2 className="font-serif text-2xl font-bold text-brand-slate">
-                    Send Us a Message
-                  </h2>
-                  <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
-                </div>
-              </div>
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 text-brand-gold font-sans font-bold tracking-widest text-sm uppercase">
+              <div className="w-8 h-0.5 bg-brand-gold" />
+              Find Us
+              <div className="w-8 h-0.5 bg-brand-gold" />
+            </span>
+            <h2 className="font-serif text-4xl md:text-5xl text-brand-slate font-bold mt-4">
+              Visit Our School
+            </h2>
+          </div>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block font-sans text-sm font-medium text-brand-charcoal mb-2">
-                      Your Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 outline-none transition-all font-sans bg-brand-cream/50"
-                      placeholder="John Doe"
-                    />
-                  </div>
-                  <div>
-                    <label className="block font-sans text-sm font-medium text-brand-charcoal mb-2">
-                      Phone Number *
-                    </label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 outline-none transition-all font-sans bg-brand-cream/50"
-                      placeholder="+234..."
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block font-sans text-sm font-medium text-brand-charcoal mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 outline-none transition-all font-sans bg-brand-cream/50"
-                    placeholder="you@example.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="block font-sans text-sm font-medium text-brand-charcoal mb-2">
-                    Subject
-                  </label>
-                  <select
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 outline-none transition-all font-sans bg-brand-cream/50"
-                  >
-                    <option value="">Select a topic...</option>
-                    <option value="admissions">Admissions Enquiry</option>
-                    <option value="online">Online School (Coming Soon)</option>
-                    <option value="fees">Fees & Payment</option>
-                    <option value="visit">Schedule a Visit</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block font-sans text-sm font-medium text-brand-charcoal mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={4}
-                    className="w-full px-4 py-3.5 rounded-xl border border-gray-200 focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 outline-none transition-all font-sans bg-brand-cream/50 resize-none"
-                    placeholder="How can we help you?"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full inline-flex items-center justify-center gap-2 bg-brand-gold hover:bg-yellow-500 disabled:bg-gray-400 text-white px-6 py-4 rounded-full font-sans font-bold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:hover:translate-y-0"
-                >
-                  {isSubmitting ? (
-                    <>
-                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      <Send size={18} />
-                      Send Message
-                    </>
-                  )}
-                </button>
-              </form>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Google Map Embed */}
+            <div className="lg:col-span-2 rounded-3xl overflow-hidden shadow-2xl border border-brand-gold/10">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5432!2d7.3461!3d8.9753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwNTgnMzEuMSJOIDfCsDIwJzQ2LjAiRQ!5e0!3m2!1sen!2sng!4v1704061234567!5m2!1sen!2sng"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Profound Performance Academy Location"
+                className="w-full"
+              />
             </div>
 
-            {/* Location & Social */}
-            <div className="space-y-8">
-              {/* Map Placeholder */}
-              <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl h-72 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 opacity-10" style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-                }} />
-                <div className="text-center z-10">
-                  <div className="w-16 h-16 bg-brand-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <MapPin size={32} className="text-brand-gold" />
-                  </div>
-                  <p className="font-sans text-gray-500 font-medium">
-                    Interactive map coming soon
-                  </p>
-                </div>
-              </div>
-
+            {/* Address & Contact Card */}
+            <div className="space-y-6">
               {/* Full Address Card */}
               <div className="bg-white rounded-3xl p-8 shadow-xl border border-brand-gold/10">
                 <h3 className="font-serif text-xl font-bold text-brand-slate mb-6 flex items-center gap-3">
@@ -283,6 +151,24 @@ const Contact = () => {
                     <br />
                     <span className="text-sm text-gray-500">(Under AMAC, FCT)</span>
                   </p>
+                </div>
+
+                {/* Quick Contact */}
+                <div className="space-y-3 mb-6">
+                  <a
+                    href="tel:+2347076153892"
+                    className="flex items-center gap-3 text-gray-600 hover:text-brand-gold transition-colors"
+                  >
+                    <Phone size={18} className="text-brand-gold" />
+                    <span className="font-sans">+234 707 615 3892</span>
+                  </a>
+                  <a
+                    href="mailto:ppacademyofficial@gmail.com"
+                    className="flex items-center gap-3 text-gray-600 hover:text-brand-gold transition-colors"
+                  >
+                    <Mail size={18} className="text-brand-gold" />
+                    <span className="font-sans text-sm">ppacademyofficial@gmail.com</span>
+                  </a>
                 </div>
 
                 {/* Social Links */}
@@ -310,6 +196,24 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
+
+              {/* WhatsApp CTA */}
+              <a
+                href="https://wa.link/w6zfaj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
+                    <MessageCircle size={28} className="text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-serif font-bold text-white text-lg">Chat with Us</h4>
+                    <p className="font-sans text-white/80 text-sm">Message us on WhatsApp</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
