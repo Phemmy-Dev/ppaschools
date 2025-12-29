@@ -53,7 +53,7 @@ const Navbar = () => {
                             </Link>
                         ))}
                         <a
-                            href="https://wa.link/w6zfaj"
+                            href="https://wa.link/5mhv2p"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="ml-4 bg-brand-gold hover:bg-yellow-600 text-white px-6 py-2.5 rounded-full font-sans font-semibold text-sm transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
@@ -93,7 +93,7 @@ const Navbar = () => {
                         </Link>
                     ))}
                     <a
-                        href="https://wa.link/w6zfaj"
+                        href="https://wa.link/5mhv2p"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="block w-full text-center bg-brand-gold text-white px-4 py-3 rounded-lg font-sans font-bold mt-4 shadow-md"

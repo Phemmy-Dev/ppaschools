@@ -104,7 +104,7 @@ const Home = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <a
-                href="https://wa.link/w6zfaj"
+                href="https://wa.link/5mhv2p"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-yellow-500 text-white px-8 py-4 rounded-full font-sans font-bold text-lg transition-all duration-300 shadow-lg shadow-brand-gold/30 hover:shadow-xl hover:shadow-brand-gold/40 hover:-translate-y-1"
@@ -449,7 +449,7 @@ const Home = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.link/w6zfaj"
+                href="https://wa.link/5mhv2p"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-yellow-500 text-white px-10 py-5 rounded-full font-sans font-bold text-lg transition-all duration-300 shadow-lg shadow-brand-gold/30 hover:shadow-xl hover:-translate-y-1"

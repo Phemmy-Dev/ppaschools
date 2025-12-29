@@ -15,8 +15,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      value: "+234 707 615 3892",
-      link: "tel:+2347076153892",
+      value: "+234 803 635 1312",
+      link: "tel:+2348036351312",
       color: "from-blue-500 to-indigo-600",
     },
     {
@@ -44,7 +44,7 @@ const Contact = () => {
     <>
       <SEO
         title="Contact Us - Get in Touch"
-        description="Contact Profound Performance Academy. Call +234 707 615 3892 or visit us at No. 3 Rahinna Street, Jikwoyi, Abuja. We're here to help with admissions and inquiries."
+        description="Contact Profound Performance Academy. Call +234 803 635 1312 or visit us at No. 3 Rahinna Street, Jikwoyi, Abuja. We're here to help with admissions and inquiries."
         keywords="contact school Jikwoyi, school phone number Abuja, Profound Performance Academy address, school location FCT"
         url="/contact"
       />
@@ -164,11 +164,11 @@ const Contact = () => {
                   {/* Quick Contact */}
                   <div className="space-y-3 mb-6">
                     <a
-                      href="tel:+2347076153892"
+                      href="tel:+2348036351312"
                       className="flex items-center gap-3 text-gray-600 hover:text-brand-gold transition-colors"
                     >
                       <Phone size={18} className="text-brand-gold" />
-                      <span className="font-sans">+234 707 615 3892</span>
+                      <span className="font-sans">+234 803 635 1312</span>
                     </a>
                     <a
                       href="mailto:ppacademyofficial@gmail.com"
@@ -207,7 +207,7 @@ const Contact = () => {
 
                 {/* WhatsApp CTA */}
                 <a
-                  href="https://wa.link/w6zfaj"
+                  href="https://wa.link/5mhv2p"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"

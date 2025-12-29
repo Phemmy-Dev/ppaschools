@@ -59,7 +59,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a
-                                    href="https://wa.link/w6zfaj"
+                                    href="https://wa.link/5mhv2p"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="hover:text-brand-gold transition-colors"
@@ -85,7 +85,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone size={18} className="text-brand-gold shrink-0" />
-                                <a href="tel:+2347076153892" className="hover:text-brand-gold transition-colors">+234 707 615 3892</a>
+                                <a href="tel:+2348036351312" className="hover:text-brand-gold transition-colors">+234 803 635 1312</a>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail size={18} className="text-brand-gold shrink-0" />

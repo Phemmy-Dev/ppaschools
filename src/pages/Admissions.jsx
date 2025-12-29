@@ -106,7 +106,7 @@ const Admissions = () => {
             </p>
 
             <a
-              href="https://wa.link/w6zfaj"
+              href="https://wa.link/5mhv2p"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-yellow-500 text-white px-8 py-4 rounded-full font-sans font-bold text-lg transition-all duration-300 shadow-lg shadow-brand-gold/30 hover:shadow-xl hover:-translate-y-1"
