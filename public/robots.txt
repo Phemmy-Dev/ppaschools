@@ -1,0 +1,14 @@
+# Sitemap for Profound Performance Academy
+# https://ppaschools.com.ng
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ppaschools.com.ng/sitemap.xml
+
+# Crawl delay (optional, for rate limiting)
+Crawl-delay: 1
+
+# Disallow admin or private areas (none currently)
+# Disallow: /admin/
