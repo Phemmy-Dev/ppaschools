@@ -76,13 +76,13 @@ const Home = () => {
           {/* Content */}
           <div className="relative z-20 text-center max-w-5xl mx-auto px-4 sm:px-6 py-20">
             {/* Animated Badge */}
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2.5 mb-8 animate-fade-in-up">
+            {/* <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2.5 mb-8 animate-fade-in-up">
               <div className="w-2 h-2 bg-brand-gold rounded-full animate-ping" />
               <span className="text-white/90 font-sans text-sm font-medium">
                 Now Offering Online Classes
               </span>
               <Sparkles size={14} className="text-brand-gold" />
-            </div>
+            </div> */}
 
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold mb-6 leading-tight">
               Building the{" "}
