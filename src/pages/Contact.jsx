@@ -186,7 +186,7 @@ const Contact = () => {
                     </h4>
                     <div className="flex gap-4">
                       <a
-                        href="https://www.facebook.com/61564853650936"
+                        href="https://www.facebook.com/share/1CiC5Bdcbp/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
@@ -194,7 +194,7 @@ const Contact = () => {
                         <Facebook size={24} className="text-white" />
                       </a>
                       <a
-                        href="https://www.instagram.com/p/DKKGW8Vo4gb/"
+                        href="https://www.instagram.com/ppa20.11"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"

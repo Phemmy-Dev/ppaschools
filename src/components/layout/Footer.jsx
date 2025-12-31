@@ -101,7 +101,7 @@ const Footer = () => {
                         </h4>
                         <div className="flex gap-3">
                             <a
-                                href="https://www.facebook.com/61564853650936"
+                                href="https://www.facebook.com/share/1CiC5Bdcbp/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white/10 p-2.5 rounded-full hover:bg-brand-gold transition-colors"
@@ -110,7 +110,7 @@ const Footer = () => {
                                 <Facebook size={20} />
                             </a>
                             <a
-                                href="https://www.instagram.com/p/DKKGW8Vo4gb/"
+                                href="https://www.instagram.com/ppa20.11"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white/10 p-2.5 rounded-full hover:bg-brand-gold transition-colors"
